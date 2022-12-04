@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+i,img,button {
+    cursor: pointer;
+}
+
+.head-navbar {
+    position: relative;
+    width: 100%;
+    padding: 0 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(180, 178, 178);
+}
+
+.left-div {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding: 1em 1em 1em 0;
+}
+
+.logo img {
+    width: 3em;
+}
+
+.middle-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.7em 0 0 0 ;
+}
+
+.upperMid-div {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    padding: 0.2em 0.7em;
+    margin-right: 0.3em;
+}
+
+.title:hover {
+    border: 1px solid rgb(211, 209, 209);
+    border-radius: 0.2em;
+}
+
+.upperMid-div i {
+    color: rgb(40, 39, 39);
+    font-size: 1.3em;
+    margin-right: 0.5em;
+    padding: 0.3em 0.5em;
+    font-weight: bold;
+}
+
+.upperMid-div i:hover {
+    background-color: rgb(231, 236, 239);
+    border-radius: 5px;
+}
+
+.lowerMid-div {
+    display: flex;
+    align-items: center;
+}
+
+.lowerMid-div button {
+    font-size: 1.2rem;
+    padding: 0.3em 0.6em;
+    background-color: transparent;
+    border: none;
+}
+
+.lowerMid-div button:hover {
+    background-color: rgb(231, 236, 239);
+    border-radius: 5px;
+}
+
+.right-div {
+    display: flex;
+    align-items: center;
+}
+
+.bi-chat-right-text {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 0.6em 0.6em 0.3em 0.6em;
+    margin-right: 0.5em;
+}
+
+.bi-chat-right-text:hover {
+    background-color: rgb(231, 236, 239);
+    border-radius: 50%;
+}
+
+.camera-div {
+    border: 1px solid rgb(211, 209, 209);
+    border-radius: 1.9em;
+    padding: 0.6em 0.3em 0.6em 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.camera-div:hover {
+    background-color: rgb(231, 236, 239);
+}
+
+img[alt="camera-pic"] {
+    width: 1.9em;
+    margin-right: 0.3em;
+}
+
+.bi-caret-down-fill {
+    font-size: 0.6rem;
+}
+
+.share-div {
+    background-color: blue;
+    color: white;
+    padding: 0.6em 1em;
+    border-radius: 0.3em;
+    cursor: pointer;   
+    margin-right: 1em; 
+}
+
+.bi-lock-fill {
+    font-size: 1.1rem;
+    margin-right: 0.3em;
+}
+
+.share-div span {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+img[alt="profile-pic"] {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+img[alt="profile-pic"]:hover {
+    outline: 4px solid rgb(231, 236, 239);
+}
+
+
+
+.lowerMid-div-copy {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(180, 178, 178);
+    display: none;
+}
+
+.lowerMid-div-copy button {
+    font-size: 1.2rem;
+    padding: 0.3em 0.6em;
+    background-color: transparent;
+    border: none;
+}
+
+.lowerMid-div-copy button:hover {
+    background-color: rgb(231, 236, 239);
+    border-radius: 5px;
+}
+
+
+.list {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 2.5rem;
+    background-color: blue;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.side-bar {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.side-bar button {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.3em 0.6em;
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: justify;
+    cursor: pointer;
+}
+
+
+
+
+
+/*============================================ Responsive-Part =============================================*/
+
+
+
+@media screen and (max-width: 820px) {
+    .lowerMid-div, .upperMid-div i  {
+        display: none;
+    } 
+
+    .lowerMid-div-copy {
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    .lowerMid-div, .upperMid-div i, .lowerMid-div-copy, .share-div, .logo img {
+        display: none;
+    } 
+    .list {
+        display: inline-block;
+    }
+    
+    .title {
+        font-size: 1.8em;
+    }
+    img[alt="camera-pic"] {
+        width: 1.4em;
+        margin-right: 0.3em;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .lowerMid-div, .lowerMid-div-copy .upperMid-div i, .camera-div, .share-div  {
+        display: none;
+    } 
+    .title {
+        font-size: 1.5em;
+        margin-left: 0.4em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .lowerMid-div, .lowerMid-div-copy .upperMid-div i, .bi-chat-right-text, .camera-div, .share-div  {
+        display: none;
+    } 
+    .title {
+        font-size: 1.5em;
+        margin-left: 0.5em;
+    }
+}
+
+
+
+
+/*=========================================== Labels on hover ==============================================*/
+
+
+.hover-label {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px; 
+}
+
+.docs-home {
+    position: absolute;
+    top: 80px;
+    display: none;
+    width: 100px;
+}
+
+.rename {
+    position: absolute;
+    top: 55px;
+    left: 150px;
+    display: none;
+    width: 80px;
+}
+
+.star {
+    position: absolute;
+    top: 55px;
+    left: 310px;
+    display: none;
+    width: 60px;
+}
+
+.move {
+    position: absolute;
+    top: 55px;
+    left: 360px;
+    display: none;
+    width: 60px;
+}
+
+.see-document-status {
+    position: absolute;
+    top: 55px;
+    left: 340px;
+    display: none;
+    width: 170px;
+}
+
+.comment-history {
+    position: absolute;
+    top: 80px;
+    right: 170px;
+    display: none;
+    width: 340px;
+}
+
+.join-a-call {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    display: none;
+    width: 350px;
+}
+
+.private {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    width: 220px;
+    padding: 12px 7px 14px 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+
+.google-account {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color:rgb(200, 204, 206);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px; 
+    display: none;
+}
+
+#white-text {
+    color: white;
+}
