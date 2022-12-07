@@ -1,14 +1,14 @@
 
 /*====================== Selection of Elements ==============================================================*/
 
-const docsHome = document.querySelector(".docs-home");
-const rename = document.querySelector(".rename");
-const star = document.querySelector(".star");
-const move = document.querySelector(".move");
-const seeDocumentStatus = document.querySelector(".see-document-status");
-const commentHistory = document.querySelector(".comment-history");
-const joinACall = document.querySelector(".join-a-call");
-const private = document.querySelector(".private");
+const docsHome = document.querySelector(".label-docs");
+const rename = document.querySelector(".label-rename");
+const star = document.querySelector(".label-star");
+const move = document.querySelector(".label-move");
+const seeDocumentStatus = document.querySelector(".label-see-document-status");
+const commentHistory = document.querySelector(".label-comment-history");
+const joinACall = document.querySelector(".label-join-a-call");
+const private = document.querySelector(".label-private");
 const googleAccount = document.querySelector(".google-account");
 const list = document.querySelector(".list");
 const sideBar = document.querySelector(".side-bar");
