@@ -81,7 +81,7 @@ i,img,button {
     border: none;
 }
 
-.lowerMid-div button:hover {
+.lowerMid-div button:hover, button:active {
     background-color: rgb(231, 236, 239);
     border-radius: 5px;
 }
@@ -171,12 +171,13 @@ img[alt="profile-pic"]:hover {
     flex-direction: column;
     box-shadow: 0 0 5px 0px;
     color:darkslategray;
+    display: none;
 }
 
 .file-content {
     display: flex;
     position: relative;
-    margin-bottom: 1em;
+    margin: 0.5em 0 1em 0;
 }
 
 .file-bar hr {
@@ -191,17 +192,78 @@ img[alt="profile-pic"]:hover {
 .file-text {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.2em;
+    /* position: absolute; */
+    /* left: 1.5em; */
 }
 
 .right-icon {
     position: absolute;
-    right: 1em;
+    right: 0.6em;
     color: dimgray;
 }
 
 
 
+.edit-bar {
+    position: absolute;
+    top: 87px;
+    left: 137px;
+    background-color: white;
+    width: 28%;
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 0px;
+    color:darkslategray;
+    display: none;
+}
 
+.edit-bar hr {
+    margin-bottom: 1em;
+}
+
+.view-bar {
+    position: absolute;
+    top: 87px;
+    left: 194px;
+    background-color: white;
+    width: 28%;
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 0px;
+    color:darkslategray;
+    display: none;
+}
+
+.only-text {
+    margin-left: 1.5em;
+}
+
+.view-bar hr {
+    margin-bottom: 1em;
+}
+
+
+.insert-bar {
+    position: absolute;
+    top: 87px;
+    left: 258px;
+    background-color: white;
+    width: 28%;
+    height: calc(100vh - 90px);
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 0px;
+    color:darkslategray;
+    overflow: scroll;
+    display: none;
+}
+
+.insert-bar hr {
+    margin-bottom: 1em;
+}
 
 
 

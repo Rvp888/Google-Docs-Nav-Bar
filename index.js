@@ -12,6 +12,10 @@ const private = document.querySelector(".label-private");
 const googleAccount = document.querySelector(".google-account");
 const list = document.querySelector(".list");
 const sideBar = document.querySelector(".side-bar");
+const fileBar = document.querySelector(".file-bar");
+const editBar = document.querySelector(".edit-bar");
+const viewBar = document.querySelector(".view-bar");
+const insertBar = document.querySelector(".insert-bar");
 
 
 
@@ -131,6 +135,45 @@ document.addEventListener("mouseout", (e)=>{
     };
 
 })
+
+
+/*================================ To display Menu-Bars on click ========================================*/
+
+
+document.addEventListener("click",(e)=>{
+    
+    if (e.target.classList.contains("file")){
+        fileBar.style.display = "block";
+    }else{
+        fileBar.style.display = "none"; 
+    }
+
+    if (e.target.classList.contains("edit")){
+        editBar.style.display = "block";
+    }else{
+        editBar.style.display = "none"; 
+    }
+
+    if (e.target.classList.contains("view")){
+        viewBar.style.display = "block";
+    }else{
+        viewBar.style.display = "none"; 
+    }
+
+    if (e.target.classList.contains("insert")){
+        insertBar.style.display = "block";
+    }else{
+        insertBar.style.display = "none"; 
+    }
+
+})
+
+
+
+
+
+
+
 
 
 
