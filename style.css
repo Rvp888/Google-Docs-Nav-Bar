@@ -266,6 +266,26 @@ img[alt="profile-pic"]:hover {
 }
 
 
+.format-bar {
+    position: absolute;
+    top: 87px;
+    left: 330px;
+    background-color: white;
+    width: 28%;
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 0px;
+    color:darkslategray;
+    display: none;
+}
+
+.format-bar hr {
+    margin-bottom: 1em;
+}
+
+
+
 
 
 /*============== Menu-Bar for Tab-view =======================*/

@@ -16,6 +16,7 @@ const fileBar = document.querySelector(".file-bar");
 const editBar = document.querySelector(".edit-bar");
 const viewBar = document.querySelector(".view-bar");
 const insertBar = document.querySelector(".insert-bar");
+const formatBar = document.querySelector(".format-bar");
 
 
 
@@ -164,6 +165,12 @@ document.addEventListener("click",(e)=>{
         insertBar.style.display = "block";
     }else{
         insertBar.style.display = "none"; 
+    }
+
+    if (e.target.classList.contains("format")){
+        formatBar.style.display = "block";
+    }else{
+        formatBar.style.display = "none"; 
     }
 
 })
