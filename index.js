@@ -18,6 +18,9 @@ const viewBar = document.querySelector(".view-bar");
 const insertBar = document.querySelector(".insert-bar");
 const formatBar = document.querySelector(".format-bar");
 
+const chatIconPopUp = document.querySelector(".chat-icon-popUp");
+const cameraDivPopUp = document.querySelector(".camera-div-popUp");
+
 
 
 
@@ -50,15 +53,7 @@ document.addEventListener("mouseover", (e)=>{
         commentHistory.style.display = "block";
     };
 
-    if (e.target.classList.contains("camera-div")){
-        joinACall.style.display = "block";
-    };
-
-    if (e.target.classList.contains("camera-img")){
-        joinACall.style.display = "block";
-    };
-
-    if (e.target.classList.contains("bi-caret-down-fill")){
+    if (e.target.classList.contains("camera")){
         joinACall.style.display = "block";
     };
 
@@ -107,15 +102,7 @@ document.addEventListener("mouseout", (e)=>{
         commentHistory.style.display = "none";
     };
 
-    if (e.target.classList.contains("camera-div","bi-caret-down-fill")){
-        joinACall.style.display = "none";
-    };
-
-    if (e.target.classList.contains("camera-img")){
-        joinACall.style.display = "none";
-    };
-
-    if (e.target.classList.contains("bi-caret-down-fill")){
+    if (e.target.classList.contains("camera")){
         joinACall.style.display = "none";
     };
 
@@ -177,6 +164,30 @@ document.addEventListener("click",(e)=>{
 
 
 
+
+
+
+
+/*================================ Nav-Bar/right-div on-click Pop-ups ========================================*/
+
+
+document.addEventListener("click", (e) => {
+
+    if (e.target.classList.contains("bi-chat-right-text")){
+        chatIconPopUp.style.display = "flex";
+        commentHistory.style.display = "none";
+    }else {
+        chatIconPopUp.style.display = "none";
+    }
+
+    if (e.target.classList.contains("camera")){
+        cameraDivPopUp.style.display = "flex";
+        joinACall.style.display = "none";
+    }else {
+        cameraDivPopUp.style.display = "none";
+    }
+
+})
 
 
 
