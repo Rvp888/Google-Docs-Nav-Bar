@@ -17,6 +17,7 @@ const editBar = document.querySelector(".edit-bar");
 const viewBar = document.querySelector(".view-bar");
 const insertBar = document.querySelector(".insert-bar");
 const formatBar = document.querySelector(".format-bar");
+const toolsBar = document.querySelector(".tools-bar");
 
 const chatIconPopUp = document.querySelector(".chat-icon-popUp");
 const cameraDivPopUp = document.querySelector(".camera-div-popUp");
@@ -158,6 +159,12 @@ document.addEventListener("click",(e)=>{
         formatBar.style.display = "block";
     }else{
         formatBar.style.display = "none"; 
+    }
+
+    if (e.target.classList.contains("tools")){
+        toolsBar.style.display = "block";
+    }else{
+        toolsBar.style.display = "none"; 
     }
 
 })

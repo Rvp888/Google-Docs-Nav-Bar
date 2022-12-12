@@ -191,7 +191,7 @@ img[alt="profile-pic"]:hover {
 }
 
 .left-icon {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-right: 0.5em;
 }
 
@@ -297,6 +297,26 @@ img[alt="profile-pic"]:hover {
     margin-bottom: 1em;
 }
 
+
+/*----------------- Tools-Bar -----------------*/
+
+.tools-bar {
+    position: absolute;
+    top: 87px;
+    left: 414px;
+    background-color: white;
+    width: 29%;
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 0px;
+    color:darkslategray;
+    display: none;
+}
+
+.tools-bar hr {
+    margin-bottom: 1em;
+}
 
 
 
