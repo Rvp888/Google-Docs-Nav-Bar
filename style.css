@@ -353,6 +353,26 @@ img[alt="profile-pic"]:hover {
 }
 
 
+/*----------------- Extensions-Bar -----------------*/
+
+.extensions-bar {
+    position: absolute;
+    top: 87px;
+    left: 481px;
+    background-color: white;
+    width: 29%;
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0 0 5px 0px;
+    color:darkslategray;
+    display: none;
+}
+
+
+
+
 
 
 /*============================================== Nav-Bar/right-div on-click Pop-ups  ==============================================*/
