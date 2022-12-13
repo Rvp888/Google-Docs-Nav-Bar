@@ -16,6 +16,7 @@ i,img,button {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(180, 178, 178);
+    box-shadow: 0 0 2px 0;
 }
 
 .left-div {
@@ -160,6 +161,26 @@ img[alt="profile-pic"]:hover {
 
 
 
+.sheets-container {
+    height: 87vh;
+    background-color: rgb(213, 244, 233);
+    overflow: scroll;
+}
+
+.white-sheet {
+    margin: 30px auto;
+    width: 70%;
+    height: 120vh;
+    background-color: white;
+    box-shadow: 0 0 3px 0;
+    cursor: text;
+}
+
+
+
+
+
+
 /*============================================== To display Menu-Bars on click  ==============================================*/
 
 
@@ -175,6 +196,7 @@ img[alt="profile-pic"]:hover {
     padding: 0.6em;
     display: flex;
     flex-direction: column;
+    border-radius: 0px 5px 5px 5px;
     box-shadow: 0 0 5px 0px;
     color:darkslategray;
     display: none;
@@ -219,6 +241,7 @@ img[alt="profile-pic"]:hover {
     padding: 0.6em;
     display: flex;
     flex-direction: column;
+    border-radius: 0px 5px 5px 5px;
     box-shadow: 0 0 5px 0px;
     color:darkslategray;
     display: none;
@@ -240,6 +263,7 @@ img[alt="profile-pic"]:hover {
     padding: 0.6em;
     display: flex;
     flex-direction: column;
+    border-radius: 0px 5px 5px 5px;
     box-shadow: 0 0 5px 0px;
     color:darkslategray;
     display: none;
@@ -266,9 +290,10 @@ img[alt="profile-pic"]:hover {
     padding: 0.6em;
     display: flex;
     flex-direction: column;
+    border-radius: 0px 5px 5px 5px;
     box-shadow: 0 0 5px 0px;
     color:darkslategray;
-    overflow: scroll;
+    overflow: auto;
     display: none;
 }
 
@@ -288,6 +313,7 @@ img[alt="profile-pic"]:hover {
     padding: 0.6em;
     display: flex;
     flex-direction: column;
+    border-radius: 0px 5px 5px 5px;
     box-shadow: 0 0 5px 0px;
     color:darkslategray;
     display: none;
@@ -309,6 +335,7 @@ img[alt="profile-pic"]:hover {
     padding: 0.6em;
     display: flex;
     flex-direction: column;
+    border-radius: 0px 5px 5px 5px;
     box-shadow: 0 0 5px 0px;
     color:darkslategray;
     display: none;
