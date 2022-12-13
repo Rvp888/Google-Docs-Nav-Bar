@@ -161,6 +161,9 @@ img[alt="profile-pic"]:hover {
 
 
 
+/*============================================== Middle-Part  ==============================================*/
+
+
 .sheets-container {
     height: 87vh;
     background-color: rgb(213, 244, 233);
@@ -168,14 +171,18 @@ img[alt="profile-pic"]:hover {
 }
 
 .white-sheet {
-    margin: 30px auto;
+    margin: 30px 0 0 220px;
     width: 70%;
-    height: 120vh;
+    height: 150vh;
     background-color: white;
     box-shadow: 0 0 3px 0;
     cursor: text;
+    resize: unset;
 }
 
+.white-sheet:focus {
+    outline: none;
+}
 
 
 
