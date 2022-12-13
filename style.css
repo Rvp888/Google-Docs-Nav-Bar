@@ -372,6 +372,42 @@ img[alt="profile-pic"]:hover {
 
 
 
+/*----------------- Help-Bar -----------------*/
+
+.help-bar {
+    position: absolute;
+    top: 87px;
+    left: 599px;
+    background-color: white;
+    width: 29%;
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 5px 5px 5px;
+    box-shadow: 0 0 5px 0px;
+    color:darkslategray;
+    display: none;
+}
+
+.help-bar hr {
+    margin-bottom: 1em;
+}
+
+.search-input {
+    width: 95%;
+    margin: 0.6em 0.6em 1em 0.6em;
+    font-size: 1.2em;
+    padding: 0.5em;
+    background-color: rgba(235, 239, 244, 0.779);
+    border: none;
+    border-radius: 0.6em;
+}
+
+.search-input:focus {
+    outline: none;
+    background-color: white;
+    box-shadow: 0 0 4px 0;
+}
 
 
 
