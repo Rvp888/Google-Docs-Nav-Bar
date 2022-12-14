@@ -23,6 +23,7 @@ const helpBar = document.querySelector(".help-bar");
 
 const chatIconPopUp = document.querySelector(".chat-icon-popUp");
 const cameraDivPopUp = document.querySelector(".camera-div-popUp");
+const profileImgPopUp = document.querySelector(".profile-img-popUp");
 
 
 
@@ -211,6 +212,13 @@ document.addEventListener("click", (e) => {
         joinACall.style.display = "none";
     }else {
         cameraDivPopUp.style.display = "none";
+    }
+
+    if (e.target.classList.contains("profile-img")){
+        profileImgPopUp.style.display = "flex";
+        googleAccount.style.display = "none";
+    }else {
+        profileImgPopUp.style.display = "none";
     }
 
 })
